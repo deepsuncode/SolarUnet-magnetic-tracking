@@ -14,7 +14,16 @@
 #   software for any purpose.  It is provided "as is" without
 #   express or implied warranty.
 # =========================================================================
-
+import os
+import warnings
+warnings.filterwarnings('ignore')
+import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+try:
+    tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+except Exception as e:
+    #print('turning logging of is not available')
+    pass
 from scipy.ndimage.measurements import label
 from magnetic_tracking import size_filter, create_elements_flux_dict
 from matplotlib.patches import Rectangle

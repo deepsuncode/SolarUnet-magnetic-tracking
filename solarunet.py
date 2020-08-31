@@ -15,7 +15,19 @@
 #   express or implied warranty.
 # =========================================================================
 
+import warnings
 import os
+import sys
+warnings.filterwarnings('ignore')
+import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+try:
+    tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+except Exception as e:
+    # print('turning logging of is not available')
+    pass
+stderr = sys.stderr
+sys.stderr = open(os.devnull, 'w')
 import cv2
 import matplotlib
 import skimage.io as io
@@ -26,7 +38,7 @@ from keras.layers import *
 from keras.models import *
 from keras.optimizers import *
 from keras.preprocessing.image import ImageDataGenerator
-
+sys.stderr = stderr
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
