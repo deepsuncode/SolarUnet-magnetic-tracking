@@ -27,7 +27,6 @@ except Exception as e:
 from scipy.ndimage.measurements import label
 from magnetic_tracking import size_filter, create_elements_flux_dict
 from matplotlib.patches import Rectangle
-from scipy.stats import epps_singleton_2samp,describe
 import csv
 import numpy as np
 import scipy.io as sio
@@ -194,4 +193,3 @@ def statistics_analysis_lifetime():
 def analysis():
     statistics_analysis_area_flux()
     statistics_analysis_lifetime()
-
