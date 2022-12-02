@@ -29,8 +29,6 @@ Requirements:
 
 Python==3.6.8(Tested)
 
-requirements.txt is already created for you
-
 To install all the packages from the requirements.txt
 ```
 pip install -r requirements.txt
