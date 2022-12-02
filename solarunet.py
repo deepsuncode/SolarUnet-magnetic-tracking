@@ -17,8 +17,8 @@
 
 import warnings
 import os
-import numpy as np
 import sys
+import numpy as np
 warnings.filterwarnings('ignore')
 import tensorflow as tf
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
