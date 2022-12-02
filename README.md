@@ -25,9 +25,16 @@ can be considered as an alternative method for solar magnetic tracking.
 
 ----
 
-Requirements: 
+Requirements:
 
-Tensorflow-GPU 1.12.0, Keras 2.2.4, astropy 4.0.1, numpy 1.16.1, scipy 1.2.0, sklearn 0.20.3, skimage 0.15.0, matplotlib 3.1.0, cv2 3.4.2. Please use the Jupyter Notebook to run the SolarUnet tool.
+Python==3.6.8(Tested)
+
+requirements.txt is already created for you
+
+To install all the packages from the requirements.txt
+```
+pip install -r requirements.txt
+```
 
 References:
 
