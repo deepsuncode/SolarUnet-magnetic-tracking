@@ -30,6 +30,7 @@ from matplotlib.patches import Rectangle
 import csv
 import numpy as np
 import scipy.io as sio
+# from scipy.stats import epps_singleton_2samp,describe
 import matplotlib.pyplot as plt
 import cv2
 from astropy.io import fits
