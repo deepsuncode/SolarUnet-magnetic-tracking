@@ -23,10 +23,11 @@ and complementing SWAMIS in tracking long-lifetime features.
 Thus, the proposed physics-guided deep learning-based tool 
 can be considered as an alternative method for solar magnetic tracking.
 
-----
+
 
 Prerequisites:  
-Note: SolarUnet was test on Python version 3.6.8  
+
+Note: SolarUnet was tested on Python version 3.6.8  
 
 Python Packages:  
 The following python packages and modules are required to run SolarUnet  
