@@ -27,7 +27,7 @@ can be considered as an alternative method for solar magnetic tracking.
 
 Requirements:
 
-Python3.6.8(Tested)
+Python 3.6.8(Tested)
 
 To install all the packages from the requirements.txt
 ```
