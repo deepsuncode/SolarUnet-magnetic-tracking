@@ -25,15 +25,28 @@ can be considered as an alternative method for solar magnetic tracking.
 
 ----
 
-Requirements:
+Prerequisites:  
+Note: SolarUnet was test on Python version 3.6.8  
 
-Python 3.6.8(Tested)
+Python Packages:  
+The following python packages and modules are required to run SolarUnet  
+astropy==4.0.1  
+keras==2.2.4  
+matplotlib==3.1.0  
+numpy==1.19.5  
+opencv-python==3.4.2.16  
+scipy==1.2.2  
+scikit-image==0.15.0  
+scikit-learn==0.20.3  
+tensorflow-gpu==1.12.3  
 
-To install all the packages from the requirements.txt
-```
+To install the required packages, you may use Python package manager "pip" as follow:
+1.	Copy the above packages into a text file,  ie "requirements.txt"
+2.	Execute the command:
 pip install -r requirements.txt
-```
-
+Note: There is a requirements file already created for you to use that includes all packages with their versions. 
+       The files are located in the root directory of the SolarUnet-magnetic-tracking
+       
 References:
 
 Identifying and Tracking Solar Magnetic Flux Elements with Deep Learning. H. Jiang, J. Wang, C. Liu, J. Jing, H. Liu, J. T. L. Wang, H. Wang, ApJS, 250:5, 2020.
